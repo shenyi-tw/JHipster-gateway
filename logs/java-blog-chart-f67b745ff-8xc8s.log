@@ -1,0 +1,145 @@
+--- Request Headers for: POST /api/blog/posts ---
+host: java-blog-chart
+x-real-ip: 127.0.0.6
+content-length: 29
+x-xsrf-token: 43f743dd-34fb-4f22-a9ee-119bff924dca
+accept-language: en
+accept: application/json, text/plain, */*
+content-type: application/json
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+origin: http://frontend.example.com
+referer: http://frontend.example.com/user/posts
+accept-encoding: gzip, deflate
+cookie: XSRF-TOKEN=43f743dd-34fb-4f22-a9ee-119bff924dca; SESSION=a9e85c1b-bf84-43f5-bd54-29a0a7acdad7
+x-request-id: d143396b-3abe-9e38-9c54-c0e75d9df613
+x-user-id: 4c973896-5761-41fc-8217-07c5d13a004b
+x-user-roles: ROLE_ADMIN,ROLE_USER
+authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVUHNJMGVIVEhlYVlFb25xYnlDZmp3RnpzdzJHdUhPbFlPVWV2WGJaN2xFIn0.eyJleHAiOjE3NjU0OTcxNTMsImlhdCI6MTc2NTQ5Njg1MywiYXV0aF90aW1lIjoxNzY1NDk2ODUzLCJqdGkiOiJvZnJ0YWM6Mjk2MTEzZWEtZGY5NC00ZmUxLThlMWQtYmU2OTYwMmQ1NWRkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrOjgwODAvcmVhbG1zL2poaXBzdGVyIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6IjRjOTczODk2LTU3NjEtNDFmYy04MjE3LTA3YzVkMTNhMDA0YiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYl9hcHAiLCJzaWQiOiI2NDA0ZDJhOC1kN2UxLTRkNTQtOWI0NS1hOTMwZDQ2OGYwNWMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLW9yZ2FuaXphdGlvbnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInB1Ymxpc2gtZXZlbnRzIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctb3JnYW5pemF0aW9ucyIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsImNyZWF0ZS1vcmdhbml6YXRpb24iLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJ3ZWJfYXBwIjp7InJvbGVzIjpbImFkIiwidW1hX3Byb3RlY3Rpb24iXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwibWFuYWdlLWNvbnNlbnQiLCJkZWxldGUtYWNjb3VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIG9yZ2FuaXphdGlvbiBwcm9maWxlIG9mZmxpbmVfYWNjZXNzIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImFkZHJlc3MiOnt9LCJyb2xlcyI6WyJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtamhpcHN0ZXIiLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZ3JvdXBzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsIm9yZ2FuaXphdGlvbnMyIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwiZ2l2ZW5fbmFtZSI6IkFkbWluIiwidXBuIjoiYWRtaW4iLCJ0ZW5hbnRJZCI6IjEiLCJvcmdhbml6YXRpb25zIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwibmFtZSI6IkFkbWluIEFkbWluaXN0cmF0b3IiLCJmYW1pbHlfbmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImFkbWluQGxvY2FsaG9zdCJ9.WBB5Mo-bJZJrinv5Y37q6r6lsrUVJY3bxpouwrtT6vR37Fb3uifORAKkfHBBoY4NHMQsVlbXm0HBdq6RK0vkT2rP147YzB9WfA-9yDa5MkyEX30CmFljxYBYOT8TUdmsXX1qdUFB91kL8kgj84ULPDmZYUjA8RgYLnaF923VogVeQYFbyFTZCM4M-FZQocfL6bGvnZYFluvYcZr1hQHGt7QjwIUIgOmh91Q6MdWxBBvw2EnSjce5d9ra80gj95sC7W9Q7UxGaAM3zuSCGp6lzQD4qSWtwLfWnlOBsfnynAMBktc4xlNsOzF9DGybYiFqyWQ9G4hZcgog-uTmY_rLqA
+forwarded: proto=http;host=frontend.example.com;for="127.0.0.6:38573"
+x-forwarded-proto: http
+x-forwarded-port: 80
+x-forwarded-host: frontend.example.com
+x-envoy-attempt-count: 1
+x-forwarded-client-cert: By=spiffe://cluster.local/ns/default/sa/java-blog-chart;Hash=3e01ab63e3a4c71f3b149e682802c20c0aa8c84411ffec09fc36ceb22c8bf22c;Subject="";URI=spiffe://cluster.local/ns/default/sa/java-gateway-chart
+-----------------------------------------------------------------
+4c973896-5761-41fc-8217-07c5d13a004b userId 
+ROLE_ADMIN,ROLE_USER Roles 
+ e java.lang.NumberFormatException: For input string: "4c973896-5761-41fc-8217-07c5d13a004b"
+Hibernate: insert into posts (author,content,title) values (?,?,?)
+--- Request Headers for: GET /api/blog/posts ---
+host: java-blog-chart
+x-real-ip: 127.0.0.6
+x-xsrf-token: 43f743dd-34fb-4f22-a9ee-119bff924dca
+accept-language: en
+accept: application/json, text/plain, */*
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+referer: http://frontend.example.com/user/posts
+accept-encoding: gzip, deflate
+cookie: XSRF-TOKEN=43f743dd-34fb-4f22-a9ee-119bff924dca; SESSION=a9e85c1b-bf84-43f5-bd54-29a0a7acdad7
+x-request-id: 5b80cd4e-fb2b-9826-99a4-00a5c70c2b9d
+x-user-id: 4c973896-5761-41fc-8217-07c5d13a004b
+x-user-roles: ROLE_ADMIN,ROLE_USER
+authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVUHNJMGVIVEhlYVlFb25xYnlDZmp3RnpzdzJHdUhPbFlPVWV2WGJaN2xFIn0.eyJleHAiOjE3NjU0OTcxNTMsImlhdCI6MTc2NTQ5Njg1MywiYXV0aF90aW1lIjoxNzY1NDk2ODUzLCJqdGkiOiJvZnJ0YWM6Mjk2MTEzZWEtZGY5NC00ZmUxLThlMWQtYmU2OTYwMmQ1NWRkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrOjgwODAvcmVhbG1zL2poaXBzdGVyIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6IjRjOTczODk2LTU3NjEtNDFmYy04MjE3LTA3YzVkMTNhMDA0YiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYl9hcHAiLCJzaWQiOiI2NDA0ZDJhOC1kN2UxLTRkNTQtOWI0NS1hOTMwZDQ2OGYwNWMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLW9yZ2FuaXphdGlvbnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInB1Ymxpc2gtZXZlbnRzIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctb3JnYW5pemF0aW9ucyIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsImNyZWF0ZS1vcmdhbml6YXRpb24iLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJ3ZWJfYXBwIjp7InJvbGVzIjpbImFkIiwidW1hX3Byb3RlY3Rpb24iXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwibWFuYWdlLWNvbnNlbnQiLCJkZWxldGUtYWNjb3VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIG9yZ2FuaXphdGlvbiBwcm9maWxlIG9mZmxpbmVfYWNjZXNzIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImFkZHJlc3MiOnt9LCJyb2xlcyI6WyJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtamhpcHN0ZXIiLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZ3JvdXBzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsIm9yZ2FuaXphdGlvbnMyIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwiZ2l2ZW5fbmFtZSI6IkFkbWluIiwidXBuIjoiYWRtaW4iLCJ0ZW5hbnRJZCI6IjEiLCJvcmdhbml6YXRpb25zIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwibmFtZSI6IkFkbWluIEFkbWluaXN0cmF0b3IiLCJmYW1pbHlfbmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImFkbWluQGxvY2FsaG9zdCJ9.WBB5Mo-bJZJrinv5Y37q6r6lsrUVJY3bxpouwrtT6vR37Fb3uifORAKkfHBBoY4NHMQsVlbXm0HBdq6RK0vkT2rP147YzB9WfA-9yDa5MkyEX30CmFljxYBYOT8TUdmsXX1qdUFB91kL8kgj84ULPDmZYUjA8RgYLnaF923VogVeQYFbyFTZCM4M-FZQocfL6bGvnZYFluvYcZr1hQHGt7QjwIUIgOmh91Q6MdWxBBvw2EnSjce5d9ra80gj95sC7W9Q7UxGaAM3zuSCGp6lzQD4qSWtwLfWnlOBsfnynAMBktc4xlNsOzF9DGybYiFqyWQ9G4hZcgog-uTmY_rLqA
+forwarded: proto=http;host=frontend.example.com;for="127.0.0.6:53049"
+x-forwarded-proto: http
+x-forwarded-port: 80
+x-forwarded-host: frontend.example.com
+content-length: 0
+x-envoy-attempt-count: 1
+x-forwarded-client-cert: By=spiffe://cluster.local/ns/default/sa/java-blog-chart;Hash=3e01ab63e3a4c71f3b149e682802c20c0aa8c84411ffec09fc36ceb22c8bf22c;Subject="";URI=spiffe://cluster.local/ns/default/sa/java-gateway-chart
+-----------------------------------------------------------------
+getPosts
+Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.title from posts p1_0 order by p1_0.id desc fetch first ? rows only
+Hibernate: select count(p1_0.id) from posts p1_0
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+--- Request Headers for: DELETE /api/blog/posts/24 ---
+host: java-blog-chart
+x-real-ip: 127.0.0.6
+x-xsrf-token: 43f743dd-34fb-4f22-a9ee-119bff924dca
+accept-language: en
+accept: application/json, text/plain, */*
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+origin: http://frontend.example.com
+referer: http://frontend.example.com/user/posts
+accept-encoding: gzip, deflate
+cookie: XSRF-TOKEN=43f743dd-34fb-4f22-a9ee-119bff924dca; SESSION=a9e85c1b-bf84-43f5-bd54-29a0a7acdad7
+x-request-id: 0f04920d-70b5-9517-b94d-7967c55ab808
+x-user-id: 4c973896-5761-41fc-8217-07c5d13a004b
+x-user-roles: ROLE_ADMIN,ROLE_USER
+authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVUHNJMGVIVEhlYVlFb25xYnlDZmp3RnpzdzJHdUhPbFlPVWV2WGJaN2xFIn0.eyJleHAiOjE3NjU0OTcxNTMsImlhdCI6MTc2NTQ5Njg1MywiYXV0aF90aW1lIjoxNzY1NDk2ODUzLCJqdGkiOiJvZnJ0YWM6Mjk2MTEzZWEtZGY5NC00ZmUxLThlMWQtYmU2OTYwMmQ1NWRkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrOjgwODAvcmVhbG1zL2poaXBzdGVyIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6IjRjOTczODk2LTU3NjEtNDFmYy04MjE3LTA3YzVkMTNhMDA0YiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYl9hcHAiLCJzaWQiOiI2NDA0ZDJhOC1kN2UxLTRkNTQtOWI0NS1hOTMwZDQ2OGYwNWMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLW9yZ2FuaXphdGlvbnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInB1Ymxpc2gtZXZlbnRzIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctb3JnYW5pemF0aW9ucyIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsImNyZWF0ZS1vcmdhbml6YXRpb24iLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJ3ZWJfYXBwIjp7InJvbGVzIjpbImFkIiwidW1hX3Byb3RlY3Rpb24iXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwibWFuYWdlLWNvbnNlbnQiLCJkZWxldGUtYWNjb3VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIG9yZ2FuaXphdGlvbiBwcm9maWxlIG9mZmxpbmVfYWNjZXNzIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImFkZHJlc3MiOnt9LCJyb2xlcyI6WyJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtamhpcHN0ZXIiLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZ3JvdXBzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsIm9yZ2FuaXphdGlvbnMyIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwiZ2l2ZW5fbmFtZSI6IkFkbWluIiwidXBuIjoiYWRtaW4iLCJ0ZW5hbnRJZCI6IjEiLCJvcmdhbml6YXRpb25zIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwibmFtZSI6IkFkbWluIEFkbWluaXN0cmF0b3IiLCJmYW1pbHlfbmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImFkbWluQGxvY2FsaG9zdCJ9.WBB5Mo-bJZJrinv5Y37q6r6lsrUVJY3bxpouwrtT6vR37Fb3uifORAKkfHBBoY4NHMQsVlbXm0HBdq6RK0vkT2rP147YzB9WfA-9yDa5MkyEX30CmFljxYBYOT8TUdmsXX1qdUFB91kL8kgj84ULPDmZYUjA8RgYLnaF923VogVeQYFbyFTZCM4M-FZQocfL6bGvnZYFluvYcZr1hQHGt7QjwIUIgOmh91Q6MdWxBBvw2EnSjce5d9ra80gj95sC7W9Q7UxGaAM3zuSCGp6lzQD4qSWtwLfWnlOBsfnynAMBktc4xlNsOzF9DGybYiFqyWQ9G4hZcgog-uTmY_rLqA
+forwarded: proto=http;host=frontend.example.com;for="127.0.0.6:38573"
+x-forwarded-proto: http
+x-forwarded-port: 80
+x-forwarded-host: frontend.example.com
+content-length: 0
+x-envoy-attempt-count: 1
+x-forwarded-client-cert: By=spiffe://cluster.local/ns/default/sa/java-blog-chart;Hash=3e01ab63e3a4c71f3b149e682802c20c0aa8c84411ffec09fc36ceb22c8bf22c;Subject="";URI=spiffe://cluster.local/ns/default/sa/java-gateway-chart
+-----------------------------------------------------------------
+ e java.lang.NumberFormatException: For input string: "4c973896-5761-41fc-8217-07c5d13a004b"
+id 24
+Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.title from posts p1_0 where p1_0.id=?
+userId 4c973896-5761-41fc-8217-07c5d13a004b username null roles ROLE_ADMIN,ROLE_USER
+author 1
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: delete from posts where id=?
+--- Request Headers for: GET /api/blog/posts ---
+host: java-blog-chart
+x-real-ip: 127.0.0.6
+x-xsrf-token: 43f743dd-34fb-4f22-a9ee-119bff924dca
+accept-language: en
+accept: application/json, text/plain, */*
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+referer: http://frontend.example.com/user/posts
+accept-encoding: gzip, deflate
+cookie: XSRF-TOKEN=43f743dd-34fb-4f22-a9ee-119bff924dca; SESSION=a9e85c1b-bf84-43f5-bd54-29a0a7acdad7
+x-request-id: 62db1c38-acde-9637-a987-55b8427652b5
+x-user-id: 4c973896-5761-41fc-8217-07c5d13a004b
+x-user-roles: ROLE_ADMIN,ROLE_USER
+authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVUHNJMGVIVEhlYVlFb25xYnlDZmp3RnpzdzJHdUhPbFlPVWV2WGJaN2xFIn0.eyJleHAiOjE3NjU0OTcxNTMsImlhdCI6MTc2NTQ5Njg1MywiYXV0aF90aW1lIjoxNzY1NDk2ODUzLCJqdGkiOiJvZnJ0YWM6Mjk2MTEzZWEtZGY5NC00ZmUxLThlMWQtYmU2OTYwMmQ1NWRkIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrOjgwODAvcmVhbG1zL2poaXBzdGVyIiwiYXVkIjpbInJlYWxtLW1hbmFnZW1lbnQiLCJicm9rZXIiLCJhY2NvdW50Il0sInN1YiI6IjRjOTczODk2LTU3NjEtNDFmYy04MjE3LTA3YzVkMTNhMDA0YiIsInR5cCI6IkJlYXJlciIsImF6cCI6IndlYl9hcHAiLCJzaWQiOiI2NDA0ZDJhOC1kN2UxLTRkNTQtOWI0NS1hOTMwZDQ2OGYwNWMiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InJlYWxtLW1hbmFnZW1lbnQiOnsicm9sZXMiOlsidmlldy1yZWFsbSIsInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwibWFuYWdlLW9yZ2FuaXphdGlvbnMiLCJtYW5hZ2UtaWRlbnRpdHktcHJvdmlkZXJzIiwiaW1wZXJzb25hdGlvbiIsInJlYWxtLWFkbWluIiwiY3JlYXRlLWNsaWVudCIsIm1hbmFnZS11c2VycyIsInF1ZXJ5LXJlYWxtcyIsInB1Ymxpc2gtZXZlbnRzIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctb3JnYW5pemF0aW9ucyIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsImNyZWF0ZS1vcmdhbml6YXRpb24iLCJ2aWV3LWNsaWVudHMiLCJtYW5hZ2UtYXV0aG9yaXphdGlvbiIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIl19LCJ3ZWJfYXBwIjp7InJvbGVzIjpbImFkIiwidW1hX3Byb3RlY3Rpb24iXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwibWFuYWdlLWNvbnNlbnQiLCJkZWxldGUtYWNjb3VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIG9yZ2FuaXphdGlvbiBwcm9maWxlIG9mZmxpbmVfYWNjZXNzIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImFkZHJlc3MiOnt9LCJyb2xlcyI6WyJST0xFX1VTRVIiLCJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtamhpcHN0ZXIiLCJST0xFX0FETUlOIiwidW1hX2F1dGhvcml6YXRpb24iXSwiZ3JvdXBzIjpbIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1qaGlwc3RlciIsIlJPTEVfQURNSU4iLCJ1bWFfYXV0aG9yaXphdGlvbiJdLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbiIsIm9yZ2FuaXphdGlvbnMyIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwiZ2l2ZW5fbmFtZSI6IkFkbWluIiwidXBuIjoiYWRtaW4iLCJ0ZW5hbnRJZCI6IjEiLCJvcmdhbml6YXRpb25zIjpbIi9BZG1pbnMiLCIvVXNlcnMiXSwibmFtZSI6IkFkbWluIEFkbWluaXN0cmF0b3IiLCJmYW1pbHlfbmFtZSI6IkFkbWluaXN0cmF0b3IiLCJlbWFpbCI6ImFkbWluQGxvY2FsaG9zdCJ9.WBB5Mo-bJZJrinv5Y37q6r6lsrUVJY3bxpouwrtT6vR37Fb3uifORAKkfHBBoY4NHMQsVlbXm0HBdq6RK0vkT2rP147YzB9WfA-9yDa5MkyEX30CmFljxYBYOT8TUdmsXX1qdUFB91kL8kgj84ULPDmZYUjA8RgYLnaF923VogVeQYFbyFTZCM4M-FZQocfL6bGvnZYFluvYcZr1hQHGt7QjwIUIgOmh91Q6MdWxBBvw2EnSjce5d9ra80gj95sC7W9Q7UxGaAM3zuSCGp6lzQD4qSWtwLfWnlOBsfnynAMBktc4xlNsOzF9DGybYiFqyWQ9G4hZcgog-uTmY_rLqA
+forwarded: proto=http;host=frontend.example.com;for="127.0.0.6:53049"
+x-forwarded-proto: http
+x-forwarded-port: 80
+x-forwarded-host: frontend.example.com
+content-length: 0
+x-envoy-attempt-count: 1
+x-forwarded-client-cert: By=spiffe://cluster.local/ns/default/sa/java-blog-chart;Hash=3e01ab63e3a4c71f3b149e682802c20c0aa8c84411ffec09fc36ceb22c8bf22c;Subject="";URI=spiffe://cluster.local/ns/default/sa/java-gateway-chart
+-----------------------------------------------------------------
+getPosts
+Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.title from posts p1_0 order by p1_0.id desc fetch first ? rows only
+Hibernate: select count(p1_0.id) from posts p1_0
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+--- Request Headers for: GET /api/blog/posts ---
+host: java-blog-chart
+x-real-ip: 127.0.0.6
+x-xsrf-token: 43f743dd-34fb-4f22-a9ee-119bff924dca
+accept-language: en
+accept: application/json, text/plain, */*
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
+referer: http://frontend.example.com/user/posts
+accept-encoding: gzip, deflate
+cookie: XSRF-TOKEN=43f743dd-34fb-4f22-a9ee-119bff924dca; SESSION=99db15dd-2ffb-436a-b612-0717ea4a4c09
+x-request-id: cb15762e-c1e9-94bc-a2dd-16007635129a
+forwarded: proto=http;host=frontend.example.com;for="127.0.0.6:38573"
+x-forwarded-proto: http
+x-forwarded-port: 80
+x-forwarded-host: frontend.example.com
+content-length: 0
+x-envoy-attempt-count: 1
+x-forwarded-client-cert: By=spiffe://cluster.local/ns/default/sa/java-blog-chart;Hash=3e01ab63e3a4c71f3b149e682802c20c0aa8c84411ffec09fc36ceb22c8bf22c;Subject="";URI=spiffe://cluster.local/ns/default/sa/java-gateway-chart
+-----------------------------------------------------------------
+getPosts
+Hibernate: select p1_0.id,p1_0.author,p1_0.content,p1_0.title from posts p1_0 order by p1_0.id desc fetch first ? rows only
+Hibernate: select count(p1_0.id) from posts p1_0
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?
+Hibernate: select c1_0.post_id,c1_0.id,c1_0.author,c1_0.content from comments c1_0 where c1_0.post_id=?

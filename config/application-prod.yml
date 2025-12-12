@@ -1,0 +1,22 @@
+
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          oidc:
+            # to use SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_OIDC_ISSUER_URI
+#            issuer-uri: http://keycloak.local:9080/realms/jhipster
+        registration:
+          oidc:
+            client-id: web_app
+            scope: openid, profile, email, offline_access
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+
+  liquibase:
+    contexts: prod
+    url: jdbc:postgresql://${db.host}:5432/myJhipsterApp
+  r2dbc:
+    url: r2dbc:postgresql://${db.host}:5432/myJhipsterApp
+    username: myJhipsterApp
+    password:

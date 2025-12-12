@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: post-service
+          uri: ${GATEWAY_BLOG_SERVICE_URI:lb://blog-service}
+          predicates:
+            - Path=/api/blog/**
+          filters:
+            - TokenRelay
+
+        - id: product-service
+          uri: ${GATEWAY_PRODUCT_SERVICE_URI:lb://product-api}
+          predicates:
+            - Path=/services/product-api/**
+          filters:
+            - TokenRelay
+
+        - id: minio-service
+          uri: ${GATEWAY_MINIO_SERVICE_URI:http://localhost:8085}
+          predicates:
+            - Path=/api/minio-service/**
+          filters:
+            - TokenRelay

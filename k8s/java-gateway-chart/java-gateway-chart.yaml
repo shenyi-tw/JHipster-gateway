@@ -1,0 +1,164 @@
+---
+# Source: java-gateway-chart/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: java-gateway-chart
+  labels:
+    helm.sh/chart: java-gateway-chart-0.1.0
+    app.kubernetes.io/name: java-gateway-chart
+    app.kubernetes.io/instance: java-gateway-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+automountServiceAccountToken: true
+---
+# Source: java-gateway-chart/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-gateway-chart
+  labels:
+    helm.sh/chart: java-gateway-chart-0.1.0
+    app.kubernetes.io/name: java-gateway-chart
+    app.kubernetes.io/instance: java-gateway-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: java-gateway-chart
+    app.kubernetes.io/instance: java-gateway-chart
+---
+# Source: java-gateway-chart/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-gateway-chart
+  labels:
+    helm.sh/chart: java-gateway-chart-0.1.0
+    app.kubernetes.io/name: java-gateway-chart
+    app.kubernetes.io/instance: java-gateway-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: java-gateway-chart
+      app.kubernetes.io/instance: java-gateway-chart
+  template:
+    metadata:
+      labels:
+        helm.sh/chart: java-gateway-chart-0.1.0
+        app.kubernetes.io/name: java-gateway-chart
+        app.kubernetes.io/instance: java-gateway-chart
+        app.kubernetes.io/version: "1.16.0"
+        app.kubernetes.io/managed-by: Helm
+    spec:
+      serviceAccountName: java-gateway-chart
+      containers:
+        - name: java-gateway-chart
+          image: "gateway-java-gateway:latest"
+          imagePullPolicy: Never
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          env:
+          - name: SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_OIDC_ISSUER_URI
+            value: "http://keycloak:8080/realms/jhipster"
+          - name: "SPRING_PROFILES_ACTIVE"
+            value: "prod" #
+          - name: "SPRING_CLOUD_CONFIG_ENABLE"
+            value: "false" #
+          - name: "DB_HOST"
+            value: "$(POSTGRESQL_SERVICE_HOST)" # 引用 K8s 注入的 HOST 變數
+          - name: "GATEWAY_PRODUCT_SERVICE_URI"
+            value: "http://product-api"
+          - name: "GATEWAY_BLOG_SERVICE_URI"
+            value: "http://java-blog-chart"
+          - name: "GATEWAY_MINIO_SERVICE_URI"
+            value: "http://minio-api"
+
+          volumeMounts:
+            - name: gateway-application
+              mountPath: /config/application.yml
+              subPath: application.yml
+
+            - name: gateway-application
+              mountPath: /config/application-prod.yml
+              subPath: application-prod.yml
+
+            - name: gateway-application
+              mountPath: /config/bootstrap-prod.yml
+              subPath: bootstrap-prod.yml
+
+      volumes:
+        - name: gateway-application
+          configMap:
+            name: gateway-application
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: java-gateway-chart
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "10m"
+    kubernetes.io/ingress.class: nginx
+    # 告訴 nginx 使用 X-Forwarded-* headers
+    nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
+    # SPA fallback for Vue Router
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  ingressClassName: nginx   # 推薦使用 spec.ingressClassName 取代 annotation
+  rules:
+    - host: gateway.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: java-gateway-chart
+                port:
+                  number: 80
+
+---
+# Source: java-gateway-chart/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "java-gateway-test-chart-connection"
+  labels:
+    helm.sh/chart: java-gateway-chart-0.1.0
+    app.kubernetes.io/name: java-gateway-chart
+    app.kubernetes.io/instance: java-gateway-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test
+spec:
+  # --- INIT CONTAINERS 區塊 (先執行) ---
+  initContainers:
+    - name: wait-for-startup
+      image: busybox
+      command: [ 'sh', '-c', 'echo "Waiting x seconds for Java Gateway to start up..."; sleep 30;' ] # 🎯 延遲 x 秒
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+#      args: ['java-gateway-chart:80']
+      args:
+        - '-T'
+        - '2' # 🎯 設置超時時間為 2 秒
+        - '-q' # 🎯 靜默模式 (不輸出進度)
+        - '-O' # 🎯 輸出到 /dev/null
+        - '/dev/null'
+        # 完整的 URL，使用 http:// 作為前綴
+        - 'http://java-gateway-chart/management/health'
+  restartPolicy: Never

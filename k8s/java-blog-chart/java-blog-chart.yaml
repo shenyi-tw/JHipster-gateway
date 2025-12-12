@@ -1,0 +1,138 @@
+---
+# Source: java-blog-chart/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: java-blog-chart
+  labels:
+    helm.sh/chart: java-blog-chart-0.1.0
+    app.kubernetes.io/name: java-blog-chart
+    app.kubernetes.io/instance: java-blog-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+automountServiceAccountToken: true
+---
+# Source: java-blog-chart/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-blog-chart
+  labels:
+    helm.sh/chart: java-blog-chart-0.1.0
+    app.kubernetes.io/name: java-blog-chart
+    app.kubernetes.io/instance: java-blog-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8083
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: java-blog-chart
+    app.kubernetes.io/instance: java-blog-chart
+---
+# Source: java-blog-chart/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-blog-chart
+  labels:
+    helm.sh/chart: java-blog-chart-0.1.0
+    app.kubernetes.io/name: java-blog-chart
+    app.kubernetes.io/instance: java-blog-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: java-blog-chart
+      app.kubernetes.io/instance: java-blog-chart
+  template:
+    metadata:
+      labels:
+        helm.sh/chart: java-blog-chart-0.1.0
+        app.kubernetes.io/name: java-blog-chart
+        app.kubernetes.io/instance: java-blog-chart
+        app.kubernetes.io/version: "1.16.0"
+        app.kubernetes.io/managed-by: Helm
+    spec:
+      serviceAccountName: java-blog-chart
+      containers:
+        - name: java-blog-chart
+          image: "blog-java-blog:latest"
+          imagePullPolicy: Never
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          env:
+            - name: "SPRING_PROFILES_ACTIVE"
+              value: "prod" #
+            - name: "SPRING_CLOUD_CONFIG_ENABLE"
+              value: "false" #
+            - name: "DB_HOST"
+              value: "$(POSTGRESQL_SERVICE_HOST)" # 引用 K8s 注入的 HOST 變數
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: java-blog-chart
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "10m"
+    kubernetes.io/ingress.class: nginx
+    # 告訴 nginx 使用 X-Forwarded-* headers
+    nginx.ingress.kubernetes.io/use-forwarded-headers: "true"
+    # SPA fallback for Vue Router
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+  ingressClassName: nginx   # 推薦使用 spec.ingressClassName 取代 annotation
+  rules:
+    - host: blog.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: java-blog-chart
+                port:
+                  number: 80
+
+---
+# Source: java-blog-chart/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "java-blog-chart-test-connection"
+  labels:
+    helm.sh/chart: java-blog-chart-0.1.0
+    app.kubernetes.io/name: java-blog-chart
+    app.kubernetes.io/instance: java-blog-chart
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test
+spec:
+  # --- INIT CONTAINERS 區塊 (先執行) ---
+  initContainers:
+    - name: wait-for-startup
+      image: busybox
+      command: [ 'sh', '-c', 'echo "Waiting 120 seconds for Java Gateway to start up..."; sleep 120;' ] # 🎯 延遲 120 秒
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      #      args: ['java-blog-chart:80']
+      args:
+        - '-T'
+        - '2' # 🎯 設置超時時間為 2 秒
+        - '-q' # 🎯 靜默模式 (不輸出進度)
+        - '-O' # 🎯 輸出到 /dev/null
+        - '/dev/null'
+        # 完整的 URL，使用 http:// 作為前綴
+        - 'http://java-blog-chart/api/blog/posts'
+  restartPolicy: Never

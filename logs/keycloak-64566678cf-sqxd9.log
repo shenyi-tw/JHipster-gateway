@@ -1,0 +1,265 @@
+Updating the configuration and installing your custom providers, if any. Please wait.
+2025-12-11 22:17:43,297 INFO  [io.quarkus.deployment.QuarkusAugmentor] (main) Quarkus augmentation completed in 47722ms
+Running the server in development mode. DO NOT use this configuration in production.
+2025-12-11 22:18:08,154 WARN  [org.keycloak.storage.datastore.DefaultMigrationManager] (main) Possibly incorrect state of migration. You are trying to run server version '26.2.3' against database, which was already migrated to newer version '26.4.6'.
+2025-12-11 22:18:08,932 WARN  [org.keycloak.storage.datastore.DefaultMigrationManager] (main) Possibly incorrect state of migration. You are trying to run server version '26.2.3' against database, which was already migrated to newer version '26.4.6'.
+2025-12-11 22:18:09,540 WARN  [org.keycloak.storage.datastore.DefaultMigrationManager] (main) Possibly incorrect state of migration. You are trying to run server version '26.2.3' against database, which was already migrated to newer version '26.4.6'.
+2025-12-11 22:18:10,332 WARN  [org.keycloak.storage.datastore.DefaultMigrationManager] (main) Possibly incorrect state of migration. You are trying to run server version '26.2.3' against database, which was already migrated to newer version '26.4.6'.
+2025-12-11 22:18:10,942 WARN  [org.keycloak.storage.datastore.DefaultMigrationManager] (main) Possibly incorrect state of migration. You are trying to run server version '26.2.3' against database, which was already migrated to newer version '26.4.6'.
+2025-12-11 22:18:10,998 INFO  [org.keycloak.quarkus.runtime.storage.infinispan.CacheManagerFactory] (main) Starting Infinispan embedded cache manager
+2025-12-11 22:18:11,120 INFO  [org.keycloak.quarkus.runtime.storage.infinispan.CacheManagerFactory] (main) JGroups JDBC_PING discovery enabled.
+2025-12-11 22:18:11,402 INFO  [org.infinispan.CONTAINER] (main) Virtual threads support enabled
+2025-12-11 22:18:11,646 INFO  [org.infinispan.CONTAINER] (main) ISPN000556: Starting user marshaller 'org.infinispan.commons.marshall.ImmutableProtoStreamMarshaller'
+2025-12-11 22:18:12,542 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: node_791026, Site name: null
+2025-12-11 22:18:12,627 INFO  [org.keycloak.exportimport.dir.DirImportProvider] (main) Importing from directory /opt/keycloak/bin/../data/import
+2025-12-11 22:18:13,177 INFO  [org.keycloak.services] (main) KC-SERVICES0030: Full model import requested. Strategy: IGNORE_EXISTING
+2025-12-11 22:18:13,757 INFO  [org.keycloak.exportimport.util.ImportUtils] (main) Realm 'jhipster' already exists. Import skipped
+2025-12-11 22:18:13,769 INFO  [org.keycloak.services] (main) KC-SERVICES0032: Import finished successfully
+2025-12-11 22:18:14,094 INFO  [io.quarkus] (main) Keycloak 26.2.3 on JVM (powered by Quarkus 3.20.0) started in 29.291s. Listening on: http://0.0.0.0:8080
+2025-12-11 22:18:14,095 INFO  [io.quarkus] (main) Profile dev activated. 
+2025-12-11 22:18:14,096 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-postgresql, keycloak, narayana-jta, opentelemetry, reactive-routes, rest, rest-jackson, smallrye-context-propagation, vertx]
+2025-12-11 22:54:37,560 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-1) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 22:54:40,002 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-2) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 22:54:40,298 WARN  [org.keycloak.services.managers.AuthenticationManager] (executor-thread-2) Required action provider factory 'idp_link' configured in the realm 'jhipster' is not available. Provider not found or feature is disabled.
+2025-12-11 23:31:56,312 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-2) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:31:56,371 WARN  [org.keycloak.events] (executor-thread-2) type="LOGOUT_ERROR", realmId="jhipster", realmName="jhipster", clientId="web_app", userId="null", ipAddress="127.0.0.1", error="session_expired"
+2025-12-11 23:31:58,174 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-2) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:32:03,133 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-3) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:32:03,172 WARN  [org.keycloak.services.managers.AuthenticationManager] (executor-thread-3) Required action provider factory 'idp_link' configured in the realm 'jhipster' is not available. Provider not found or feature is disabled.
+2025-12-11 23:33:19,675 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-4) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:33:20,140 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-3) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:33:22,346 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-7) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:33:22,533 WARN  [org.keycloak.services.managers.AuthenticationManager] (executor-thread-7) Required action provider factory 'idp_link' configured in the realm 'master' is not available. Provider not found or feature is disabled.
+2025-12-11 23:47:20,993 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-4) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:47:21,071 WARN  [org.keycloak.events] (executor-thread-4) type="LOGOUT_ERROR", realmId="jhipster", realmName="jhipster", clientId="web_app", userId="null", ipAddress="127.0.0.1", error="session_expired"
+2025-12-11 23:47:31,051 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-4) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:47:33,228 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-9) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:47:33,271 WARN  [org.keycloak.services.managers.AuthenticationManager] (executor-thread-9) Required action provider factory 'idp_link' configured in the realm 'jhipster' is not available. Provider not found or feature is disabled.
+2025-12-11 23:47:57,480 WARN  [org.keycloak.cookie.DefaultCookieProvider] (executor-thread-9) Non-secure context detected; cookies are not secured, and will not be available in cross-origin POST requests
+2025-12-11 23:47:57,502 WARN  [org.keycloak.events] (executor-thread-9) type="LOGOUT_ERROR", realmId="jhipster", realmName="jhipster", clientId="web_app", userId="null", ipAddress="127.0.0.1", error="session_expired"
+2025-12-11T22:15:38.398605Z	info	Istio iptables environment:
+ENVOY_PORT=
+INBOUND_CAPTURE_PORT=
+ISTIO_INBOUND_INTERCEPTION_MODE=
+ISTIO_INBOUND_TPROXY_ROUTE_TABLE=
+ISTIO_INBOUND_PORTS=
+ISTIO_OUTBOUND_PORTS=
+ISTIO_LOCAL_EXCLUDE_PORTS=
+ISTIO_EXCLUDE_INTERFACES=
+ISTIO_SERVICE_CIDR=
+ISTIO_SERVICE_EXCLUDE_CIDR=
+ISTIO_META_DNS_CAPTURE=
+INVALID_DROP=
+
+2025-12-11T22:15:38.400035Z	info	Istio config:
+PROXY_PORT=15001
+PROXY_INBOUND_CAPTURE_PORT=15006
+PROXY_TUNNEL_PORT=15008
+PROXY_UID=1337
+PROXY_GID=1337
+INBOUND_INTERCEPTION_MODE=REDIRECT
+INBOUND_TPROXY_MARK=1337
+INBOUND_TPROXY_ROUTE_TABLE=133
+INBOUND_PORTS_INCLUDE=*
+INBOUND_PORTS_EXCLUDE=15090,15021,15020
+OUTBOUND_OWNER_GROUPS_INCLUDE=*
+OUTBOUND_OWNER_GROUPS_EXCLUDE=
+OUTBOUND_IP_RANGES_INCLUDE=*
+OUTBOUND_IP_RANGES_EXCLUDE=
+OUTBOUND_PORTS_INCLUDE=
+OUTBOUND_PORTS_EXCLUDE=
+KUBE_VIRT_INTERFACES=
+ENABLE_INBOUND_IPV6=false
+DUAL_STACK=false
+DNS_CAPTURE=false
+DROP_INVALID=false
+CAPTURE_ALL_DNS=false
+DNS_SERVERS=[],[]
+NETWORK_NAMESPACE=
+CNI_MODE=false
+EXCLUDE_INTERFACES=
+RECONCILE=false
+CLEANUP_ONLY=false
+FORCE_APPLY=false
+NATIVE_NFTABLES=false
+FORCE_IPTABLES_BINARY=
+
+2025-12-11T22:15:38.498725Z	info	Clean-state detected, new iptables are needed
+2025-12-11T22:15:38.498786Z	info	Applying iptables chains and rules
+2025-12-11T22:15:38.498990Z	info	Running iptables restore with: iptables-nft-restore and the following input:
+* nat
+-N ISTIO_INBOUND
+-N ISTIO_REDIRECT
+-N ISTIO_IN_REDIRECT
+-N ISTIO_OUTPUT
+-A ISTIO_INBOUND -p tcp --dport 15008 -j RETURN
+-A ISTIO_REDIRECT -p tcp -j REDIRECT --to-ports 15001
+-A ISTIO_IN_REDIRECT -p tcp -j REDIRECT --to-ports 15006
+-A PREROUTING -p tcp -j ISTIO_INBOUND
+-A ISTIO_INBOUND -p tcp --dport 15090 -j RETURN
+-A ISTIO_INBOUND -p tcp --dport 15021 -j RETURN
+-A ISTIO_INBOUND -p tcp --dport 15020 -j RETURN
+-A ISTIO_INBOUND -p tcp -j ISTIO_IN_REDIRECT
+-A OUTPUT -j ISTIO_OUTPUT
+-A ISTIO_OUTPUT -o lo -s 127.0.0.6/32 -j RETURN
+-A ISTIO_OUTPUT -o lo ! -d 127.0.0.1/32 -p tcp ! --dport 15008 -m owner --uid-owner 1337 -j ISTIO_IN_REDIRECT
+-A ISTIO_OUTPUT -o lo -m owner ! --uid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -m owner --uid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -o lo ! -d 127.0.0.1/32 -p tcp ! --dport 15008 -m owner --gid-owner 1337 -j ISTIO_IN_REDIRECT
+-A ISTIO_OUTPUT -o lo -m owner ! --gid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -m owner --gid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -d 127.0.0.1/32 -j RETURN
+-A ISTIO_OUTPUT -j ISTIO_REDIRECT
+COMMIT
+2025-12-11T22:15:38.693714Z	info	Final iptables state (IPv4):
+# Generated by iptables-nft-save v1.8.10 (nf_tables) on Thu Dec 11 22:15:38 2025
+*nat
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+:ISTIO_INBOUND - [0:0]
+:ISTIO_IN_REDIRECT - [0:0]
+:ISTIO_OUTPUT - [0:0]
+:ISTIO_REDIRECT - [0:0]
+-A PREROUTING -p tcp -j ISTIO_INBOUND
+-A OUTPUT -j ISTIO_OUTPUT
+-A ISTIO_INBOUND -p tcp -m tcp --dport 15008 -j RETURN
+-A ISTIO_INBOUND -p tcp -m tcp --dport 15090 -j RETURN
+-A ISTIO_INBOUND -p tcp -m tcp --dport 15021 -j RETURN
+-A ISTIO_INBOUND -p tcp -m tcp --dport 15020 -j RETURN
+-A ISTIO_INBOUND -p tcp -j ISTIO_IN_REDIRECT
+-A ISTIO_IN_REDIRECT -p tcp -j REDIRECT --to-ports 15006
+-A ISTIO_OUTPUT -s 127.0.0.6/32 -o lo -j RETURN
+-A ISTIO_OUTPUT ! -d 127.0.0.1/32 -o lo -p tcp -m tcp ! --dport 15008 -m owner --uid-owner 1337 -j ISTIO_IN_REDIRECT
+-A ISTIO_OUTPUT -o lo -m owner ! --uid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -m owner --uid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT ! -d 127.0.0.1/32 -o lo -p tcp -m tcp ! --dport 15008 -m owner --gid-owner 1337 -j ISTIO_IN_REDIRECT
+-A ISTIO_OUTPUT -o lo -m owner ! --gid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -m owner --gid-owner 1337 -j RETURN
+-A ISTIO_OUTPUT -d 127.0.0.1/32 -j RETURN
+-A ISTIO_OUTPUT -j ISTIO_REDIRECT
+-A ISTIO_REDIRECT -p tcp -j REDIRECT --to-ports 15001
+COMMIT
+# Completed on Thu Dec 11 22:15:38 2025
+
+2025-12-11T22:15:46.297810Z	info	FLAG: --concurrency="0"
+2025-12-11T22:15:46.297980Z	info	FLAG: --domain="default.svc.cluster.local"
+2025-12-11T22:15:46.298006Z	info	FLAG: --help="false"
+2025-12-11T22:15:46.298011Z	info	FLAG: --log_as_json="false"
+2025-12-11T22:15:46.298015Z	info	FLAG: --log_caller=""
+2025-12-11T22:15:46.298022Z	info	FLAG: --log_output_level="default:info"
+2025-12-11T22:15:46.298026Z	info	FLAG: --log_stacktrace_level="default:none"
+2025-12-11T22:15:46.301294Z	info	FLAG: --log_target="[stdout]"
+2025-12-11T22:15:46.301615Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2025-12-11T22:15:46.301622Z	info	FLAG: --outlierLogPath=""
+2025-12-11T22:15:46.301627Z	info	FLAG: --profiling="true"
+2025-12-11T22:15:46.301630Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2025-12-11T22:15:46.301632Z	info	FLAG: --proxyLogLevel="warning"
+2025-12-11T22:15:46.301635Z	info	FLAG: --serviceCluster="istio-proxy"
+2025-12-11T22:15:46.301639Z	info	FLAG: --stsPort="0"
+2025-12-11T22:15:46.301642Z	info	FLAG: --templateFile=""
+2025-12-11T22:15:46.301645Z	info	FLAG: --tokenManagerPlugin=""
+2025-12-11T22:15:46.301669Z	info	FLAG: --vklog="0"
+2025-12-11T22:15:46.301677Z	info	Version 1.28.1-6268e25f089a4b0f726082053cf630490c235cdc-Clean
+2025-12-11T22:15:46.302614Z	info	Proxy role	ips=[10.244.1.195] type=sidecar id=keycloak-64566678cf-sqxd9.default domain=default.svc.cluster.local
+2025-12-11T22:15:46.303043Z	info	Apply proxy config from env {}
+
+2025-12-11T22:15:46.306743Z	info	cpu limit detected as 2, setting concurrency
+2025-12-11T22:15:46.308083Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: ./etc/istio/proxy
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istiod.istio-system.svc:15012
+drainDuration: 45s
+proxyAdminPort: 15000
+serviceCluster: istio-proxy
+statNameLength: 189
+statusPort: 15020
+terminationDrainDuration: 5s
+
+2025-12-11T22:15:46.308127Z	info	JWT policy is third-party-jwt
+2025-12-11T22:15:46.308133Z	info	using credential fetcher of JWT type in cluster.local trust domain
+2025-12-11T22:15:46.315324Z	info	Opening status port 15020
+2025-12-11T22:15:46.405775Z	info	Starting default Istio SDS Server
+2025-12-11T22:15:46.405938Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2025-12-11T22:15:46.405986Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2025-12-11T22:15:46.406961Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2025-12-11T22:15:46.409107Z	info	sds	Starting SDS grpc server
+2025-12-11T22:15:46.409131Z	info	sds	Starting SDS server for workload certificates, will listen on "var/run/secrets/workload-spiffe-uds/socket"
+2025-12-11T22:15:46.493558Z	info	Pilot SAN: [istiod.istio-system.svc]
+2025-12-11T22:15:46.495291Z	info	Starting proxy agent
+2025-12-11T22:15:46.495411Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev.json --drain-time-s 45 --drain-strategy immediate --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --allow-unknown-static-fields -l warning --component-log-level misc:error --skip-deprecated-logs --concurrency 2]
+2025-12-11T22:16:01.417821Z	warn	ca	ca request failed, starting attempt 1 in 106.326529ms
+2025-12-11T22:16:01.524471Z	warn	ca	ca request failed, starting attempt 2 in 211.003927ms
+2025-12-11T22:16:01.737426Z	warn	ca	ca request failed, starting attempt 3 in 437.615578ms
+2025-12-11T22:16:02.176463Z	warn	ca	ca request failed, starting attempt 4 in 849.029641ms
+2025-12-11T22:16:03.026409Z	error	citadelclient	failed to sign CSR: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp: lookup istiod.istio-system.svc on 10.96.0.10:53: read udp 10.244.1.195:39202->10.96.0.10:53: i/o timeout"
+2025-12-11T22:16:03.026791Z	info	citadelclient	recreated connection
+2025-12-11T22:16:03.026885Z	error	cache	resource:default failed to sign: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp: lookup istiod.istio-system.svc on 10.96.0.10:53: read udp 10.244.1.195:39202->10.96.0.10:53: i/o timeout"
+2025-12-11T22:16:03.026893Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp: lookup istiod.istio-system.svc on 10.96.0.10:53: read udp 10.244.1.195:39202->10.96.0.10:53: i/o timeout"
+2025-12-11T22:16:11.794825Z	warn	ca	ca request failed, starting attempt 1 in 105.744214ms
+2025-12-11T22:16:11.901269Z	warn	ca	ca request failed, starting attempt 2 in 187.523094ms
+2025-12-11T22:16:12.096820Z	warn	ca	ca request failed, starting attempt 3 in 383.678505ms
+2025-12-11T22:16:12.481684Z	warn	ca	ca request failed, starting attempt 4 in 857.849734ms
+2025-12-11T22:16:13.340385Z	error	citadelclient	failed to sign CSR: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp: lookup istiod.istio-system.svc on 10.96.0.10:53: read udp 10.244.1.195:46155->10.96.0.10:53: read: connection refused"
+2025-12-11T22:16:13.340871Z	info	citadelclient	recreated connection
+2025-12-11T22:16:13.340928Z	error	cache	resource:default failed to sign: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp: lookup istiod.istio-system.svc on 10.96.0.10:53: read udp 10.244.1.195:46155->10.96.0.10:53: read: connection refused"
+2025-12-11T22:16:13.340937Z	warn	sds	failed to warm certificate: failed to generate workload certificate: create certificate: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp: lookup istiod.istio-system.svc on 10.96.0.10:53: read udp 10.244.1.195:46155->10.96.0.10:53: read: connection refused"
+2025-12-11T22:16:22.513401Z	warn	ca	ca request failed, starting attempt 1 in 109.866908ms
+2025-12-11T22:16:22.624444Z	warn	ca	ca request failed, starting attempt 2 in 204.148977ms
+2025-12-11T22:16:22.893319Z	warn	ca	ca request failed, starting attempt 3 in 385.751569ms
+2025-12-11T22:16:23.108361Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=4
+2025-12-11T22:16:23.293761Z	warn	ca	ca request failed, starting attempt 4 in 761.462025ms
+2025-12-11T22:16:23.516439Z	info	ads	ADS: new connection for node:1
+2025-12-11T22:16:23.517067Z	info	ads	ADS: new connection for node:2
+2025-12-11T22:16:24.100109Z	info	cache	generated new workload certificate	resourceName=default latency=10.3806494s ttl=23h59m59.899896264s
+2025-12-11T22:16:24.100155Z	info	cache	Root cert has changed, start rotating root cert
+2025-12-11T22:16:24.100204Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.899797549s
+2025-12-11T22:16:24.100229Z	info	cache	returned workload certificate from cache	ttl=23h59m59.899771925s
+2025-12-11T22:16:24.102567Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.897439581s
+2025-12-11T22:16:24.103003Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.8970053s
+2025-12-11T22:16:25.396877Z	info	Readiness succeeded in 39.191376037s
+2025-12-11T22:16:25.397185Z	info	Envoy proxy is ready
+[2025-12-11T22:17:23.704Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 503 URX,UF upstream_reset_before_response_started{remote_connection_failure|delayed_connect_error:_Connection_refused} - "delayed_connect_error:_Connection_refused" 0 190 110 - "-" "Java/17.0.17" "7800ae08-3c65-95f2-8222-26e44a90b9d0" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| - 10.244.1.195:8080 10.244.1.206:45642 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:18:03.726Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 503 URX,UF upstream_reset_before_response_started{remote_connection_failure|delayed_connect_error:_Connection_refused} - "delayed_connect_error:_Connection_refused" 0 190 65 - "-" "Java/17.0.17" "d6e5ab6b-1426-98e3-875f-9b3167dc6049" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| - 10.244.1.195:8080 10.244.1.206:33726 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:18:25.831Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 718 718 "-" "Java/17.0.17" "ba2f6181-e161-93a2-8426-bb83ed3762f0" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.206:33726 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:19:21.327Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 9 9 "-" "Java/17.0.17" "e37d0419-3d77-91f9-8a75-74f4f0ff3af7" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:43429 10.244.1.195:8080 10.244.1.206:45642 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:20:27.746Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 52 52 "-" "Java/17.0.17" "be8942d2-77ba-9267-9e9f-68f220ac62e0" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.206:33726 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:22:24.830Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 68 68 "-" "Java/17.0.17" "a1f04123-8ced-9685-a979-15f1e17d4e51" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.206:33726 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:23:56.921Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 5 5 "-" "Java/17.0.17" "66c1f0bb-e99f-9e7e-af3e-2ebf346cfe95" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:43429 10.244.1.195:8080 10.244.1.209:52130 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:24:19.319Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 7 7 "-" "Java/17.0.17" "459f603c-2d88-9124-afe4-cc9bf6df3494" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.209:45406 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:24:56.822Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 6 6 "-" "Java/17.0.17" "b0f8cbf0-b120-9732-9636-445bb54c6900" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.209:45406 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:25:45.197Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 5 5 "-" "Java/17.0.17" "068ab835-a88e-9830-ad93-d6ba13bb9b9c" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:43429 10.244.1.195:8080 10.244.1.209:52130 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:26:55.808Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 7 6 "-" "Java/17.0.17" "93bc450b-a072-99e1-9118-d0a1dcf5ec7f" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.209:45406 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:18:12.815Z] "- - -" 0 - - - "-" 23474 138660 589900 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:37530 10.100.107.170:5433 10.244.1.195:41938 - -
+[2025-12-11T22:18:02.998Z] "- - -" 0 - - - "-" 31335 371003 599717 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:56066 10.100.107.170:5433 10.244.1.195:44926 - -
+[2025-12-11T22:28:40.607Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 4 4 "-" "Java/17.0.17" "159b1f99-f6da-9fc0-b74b-fdf327edc4b9" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:43429 10.244.1.195:8080 10.244.1.209:52130 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:31:56.297Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 6 6 "-" "Java/17.0.17" "de8d5cdb-099b-9633-8e6e-ffe62c0dbb84" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.209:45406 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:37:40.438Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 50 50 "-" "Java/17.0.17" "a1545e73-917b-912b-9751-2302459bf8c3" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:43429 10.244.1.195:8080 10.244.1.209:52130 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:33:13.816Z] "- - -" 0 - - - "-" 4197 1729 588898 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:37048 10.100.107.170:5433 10.244.1.195:59210 - -
+[2025-12-11T22:43:10.185Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 4 4 "-" "Java/17.0.17" "49640be7-b40c-91c0-ae4c-55c0af581572" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.209:45406 outbound_.8080_._.keycloak.default.svc.cluster.local default
+2025-12-11T22:45:39.574636Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=5
+[2025-12-11T22:48:39.786Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 5 4 "-" "Java/17.0.17" "04e11757-3f3a-9a52-b346-d0656a089f8e" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:43429 10.244.1.195:8080 10.244.1.209:52130 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:51:25.715Z] "GET /realms/jhipster/.well-known/openid-configuration HTTP/1.1" 200 - via_upstream - "-" 0 6423 29 28 "-" "Java/17.0.17" "a8b5a8c7-9320-9791-ab49-713b04d49b70" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:54:40.675Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 223 5132 225 225 "-" "ReactorNetty/1.2.5" "be3a6033-16a0-98e8-b698-de3893805f3b" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:54:41.072Z] "GET /realms/jhipster/protocol/openid-connect/certs HTTP/1.1" 200 - via_upstream - "-" 0 1466 32 32 "-" "ReactorNetty/1.2.5" "d12eeb04-3118-9a3e-8d82-493b9f7be8b7" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:54:41.181Z] "GET /realms/jhipster/protocol/openid-connect/userinfo HTTP/1.1" 200 - via_upstream - "-" 0 515 24 24 "-" "ReactorNetty/1.2.5" "8b851b6f-b3fd-9190-8406-0f0816b01a49" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T22:48:15.456Z] "- - -" 0 - - - "-" 36060 98836 888915 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:42994 10.100.107.170:5433 10.244.1.195:47550 - -
+[2025-12-11T23:05:08.940Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 752 5060 80 79 "-" "ReactorNetty/1.2.5" "40be9beb-3417-9a5e-903a-033855175960" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:09:13.931Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 752 5060 54 54 "-" "ReactorNetty/1.2.5" "9da28cd7-4193-9d8d-b2f5-640e318b5364" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+2025-12-11T23:14:31.936470Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=6
+[2025-12-11T23:03:15.457Z] "- - -" 0 - - - "-" 8775 7721 888912 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:38054 10.100.107.170:5433 10.244.1.195:38144 - -
+[2025-12-11T23:18:15.458Z] "- - -" 0 - - - "-" 4153 1703 588908 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:34278 10.100.107.170:5433 10.244.1.195:44764 - -
+[2025-12-11T23:31:56.206Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 752 5060 49 49 "-" "ReactorNetty/1.2.5" "64cdcda8-cf8b-997f-913b-41c43030450a" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:32:03.212Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 223 5132 45 45 "-" "ReactorNetty/1.2.5" "20ea2b52-469a-9ae3-8594-eaece63b3a12" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:32:03.265Z] "GET /realms/jhipster/protocol/openid-connect/userinfo HTTP/1.1" 200 - via_upstream - "-" 0 515 7 7 "-" "ReactorNetty/1.2.5" "d02182f1-ada9-9721-96cd-a46c6270c6d1" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:33:23.248Z] "- - -" 0 - - - "-" 17195 81975 581116 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:39198 10.100.107.170:5433 10.244.1.195:49022 - -
+[2025-12-11T23:31:56.225Z] "- - -" 0 - - - "-" 60042 117181 668141 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:48892 10.100.107.170:5433 10.244.1.195:53660 - -
+2025-12-11T23:43:21.104598Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=7
+[2025-12-11T23:47:20.892Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 752 5060 43 43 "-" "ReactorNetty/1.2.5" "d1d23cf8-e09b-9c79-a844-e69dcc9dce01" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:47:33.311Z] "POST /realms/jhipster/protocol/openid-connect/token HTTP/1.1" 200 - via_upstream - "-" 223 5132 52 52 "-" "ReactorNetty/1.2.5" "adc5a1f2-ea4b-9849-9992-d5cc2e49eaae" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:47:33.375Z] "GET /realms/jhipster/protocol/openid-connect/userinfo HTTP/1.1" 200 - via_upstream - "-" 0 515 12 11 "-" "ReactorNetty/1.2.5" "6832271f-17f1-99ce-9356-10c4b548d4f1" "keycloak:8080" "10.244.1.195:8080" inbound|8080|| 127.0.0.6:33141 10.244.1.195:8080 10.244.1.217:39544 outbound_.8080_._.keycloak.default.svc.cluster.local default
+[2025-12-11T23:43:33.189Z] "- - -" 0 - - - "-" 21864 102810 871176 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:34834 10.100.107.170:5433 10.244.1.195:45552 - -
+[2025-12-12T00:03:15.460Z] "- - -" 0 - - - "-" 4197 1729 585041 - "-" "-" "-" "-" "192.168.1.101:5433" outbound|5433||postgresql-keycloak.default.svc.cluster.local 10.244.1.195:56672 10.100.107.170:5433 10.244.1.195:41238 - -
+2025-12-12T00:13:39.560464Z	info	xdsproxy	connected to delta upstream XDS server: istiod.istio-system.svc:15012	id=8
